@@ -1,0 +1,190 @@
+html {
+    height: 97%;
+}
+
+body {
+    height: 98%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/bgimage.jpg);
+    background-size: auto;
+}
+
+p {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.main {
+    display: grid;
+    height: 98%;
+    grid-template-columns: 4fr 6fr;
+}
+
+.left {
+    margin: 1%;
+    height: 98%;
+}
+
+.profile-image {
+    height: 49%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.image {
+    border-radius: 51%;
+    border: 1px solid lightblue;
+    box-shadow: 0px 0px 4px lightgray;
+    margin-bottom: 2%;
+}
+
+.name {
+    font-size: 150%;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 1%;
+}
+
+.data {
+    line-height: 100%;
+}
+
+.left-info {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+    height: 49%;
+    font-weight: 500;  
+    line-height: 80%;
+}
+
+.right {
+    margin: 0% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 0%;
+}
+
+.card {
+    margin: 1%;
+    padding: 2% 2%;
+    min-height: 32%;
+    background-color: #F0f8ff;
+    border-radius: 2%;
+    box-shadow: -1px -1px 5px lightgray;
+
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.skills {
+    margin: 0;
+    padding-left: 1%;
+}
+
+.card2 {
+    margin: 1%;
+    padding: 2% 2%;
+    min-height: 29%;
+    background-color: #F0f8ff;
+    border-radius: 2%;
+    box-shadow: -1px -1px 5px lightgray;
+
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.edu-info, .info {
+    position: relative;
+    margin: 1%;
+}
+
+.icon {
+    position: absolute;
+    height: 20px;
+    top: 22px;
+    left: -5px;
+}
+
+.call-icon {
+    height: 10%;
+}
+
+.icon-image {
+    position: absolute;
+}
+
+.type {
+    font-weight: 600;
+    font-size: 110%;
+    padding-bottom: 1%;
+}
+
+.institute {
+    margin-left: 4%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info2 {
+    margin-left: 8%;
+}
+
+.info3 {
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.card-title {
+    font-size: 150%;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+@media (max-width: 850px) {
+    .main {
+        display: block;
+    }
+    
+    .left {
+        height: 50%;
+    }
+
+    .card {
+        min-height: 180px;
+    }
+
+    .profile-image {
+        margin-top: 0%;
+    }
+
+    .institute {
+        margin-left: 6%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        display: block;
+    }
+}
